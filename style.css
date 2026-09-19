@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #c9eafa;
+    color: #173b5c;
+    font-family: "Fredoka", sans-serif;
+    overflow-x: hidden;
+}
+
+/* =========================
+   PEMBUKA
+========================= */
+
+.opening {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        linear-gradient(45deg, #ffffff 25%, transparent 25%),
+        linear-gradient(-45deg, #ffffff 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ffffff 75%),
+        linear-gradient(-45deg, transparent 75%, #ffffff 75%);
+    background-size: 70px 70px;
+    background-position: 0 0, 0 35px, 35px -35px, -35px 0;
+    background-color: #b9dcf0;
+}
+
+.opening-content {
+    width: min(90%, 500px);
+    background: rgba(255,255,255,0.94);
+    padding: 55px 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(40,90,120,.2);
+    position: relative;
+    z-index: 2;
+    animation: appear 1s ease;
+}
+
+.snoopy {
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.small-title,
+.label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.opening h1 {
+    font-size: clamp(42px, 10vw, 75px);
+    line-height: .95;
+    margin: 20px 0;
+    color: #173b5c;
+}
+
+.opening-text {
+    font-family: "Patrick Hand", cursive;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+button {
+    border: 2px solid #173b5c;
+    background: #fff;
+    color: #173b5c;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: #173b5c;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+#birthday {
+    display: none;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #d9effa 0,
+            #d9effa 25px,
+            #c3e3f3 25px,
+            #c3e3f3 29px
+        );
+}
+
+.hero-card {
+    width: min(90%, 550px);
+    background: #fffdf7;
+    padding: 45px 35px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(30,80,110,.2);
+    position: relative;
+    transform: rotate(-1deg);
+}
+
+.tape {
+    width: 110px;
+    height: 35px;
+    background: rgba(221,210,168,.7);
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-4deg);
+}
+
+.hero h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: clamp(42px, 9vw, 65px);
+    line-height: .95;
+    margin: 15px 0 25px;
+}
+
+.photo-frame {
+    background: white;
+    padding: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    transform: rotate(2deg);
+    margin: auto;
+    max-width: 360px;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+.caption {
+    font-family: "Patrick Hand", cursive;
+    font-size: 23px;
+    margin-top: 25px;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+    background: #b8d9eb;
+}
+
+.paper {
+    max-width: 650px;
+    background: #fffdf5;
+    padding: 55px 45px;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(30,70,90,.2);
+}
+
+.paper h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 48px;
+    margin: 10px 0 25px;
+}
+
+.paper p {
+    font-family: "Patrick Hand", cursive;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.paper-decoration {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    font-size: 40px;
+}
+
+.signature {
+    text-align: right;
+    font-family: "Patrick Hand", cursive;
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+
+/* =========================
+   10 THINGS
+========================= */
+
+.things {
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #eaf6fc 0,
+            #eaf6fc 25px,
+            #c8e4f2 25px,
+            #c8e4f2 28px
+        );
+}
+
+.things-card {
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 45px 35px;
+    box-shadow: 0 15px 30px rgba(30,70,90,.2);
+}
+
+.things-card h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 48px;
+    margin: 10px 0 30px;
+}
+
+.thing {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px dashed #aacbdc;
+}
+
+.thing span {
+    width: 35px;
+    height: 35px;
+    background: #9bcde7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.thing p {
+    font-family: "Patrick Hand", cursive;
+    font-size: 20px;
+}
+
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories {
+    background: #a9d5eb;
+}
+
+.memory-card {
+    max-width: 750px;
+    width: 100%;
+    text-align: center;
+}
+
+.memory-card h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.memory-text {
+    font-family: "Patrick Hand", cursive;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.gallery-photo {
+    background: white;
+    padding: 10px 10px 25px;
+    box-shadow: 0 10px 20px rgba(20,60,80,.25);
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.rotate-left {
+    transform: rotate(-4deg);
+}
+
+.rotate-right {
+    transform: rotate(4deg);
+}
+
+
+/* =========================
+   WISH
+========================= */
+
+.wish {
+    background: #fff7f7;
+}
+
+.wish-card {
+    max-width: 600px;
+    text-align: center;
+}
+
+.cake {
+    font-size: 90px;
+    animation: bounce 1.5s infinite;
+}
+
+.wish h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.wish p {
+    font-family: "Patrick Hand", cursive;
+    font-size: 23px;
+    margin: 15px;
+}
+
+.hearts {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+/* =========================
+   ENDING
+========================= */
+
+.ending {
+    background:
+        linear-gradient(135deg, #a8cee2, #d9edf7);
+}
+
+.ending-card {
+    background: #fff;
+    max-width: 600px;
+    text-align: center;
+    padding: 60px 35px;
+    box-shadow: 0 15px 35px rgba(30,70,90,.2);
+}
+
+.ending h2 {
+    font-family: "Patrick Hand", cursive;
+    font-size: clamp(45px, 9vw, 65px);
+    line-height: 1;
+    margin: 20px 0;
+}
+
+.ending p {
+    font-family: "Patrick Hand", cursive;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+.final-heart {
+    font-size: 60px;
+    margin: 25px;
+}
+
+.from {
+    font-size: 20px !important;
+}
+
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    z-index: 100;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+
+/* =========================
+   ANIMASI
+========================= */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 15px;
+    top: -20px;
+    z-index: 999;
+    animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 60px 15px;
+    }
+
+    .hero-card,
+    .paper,
+    .things-card,
+    .ending-card {
+        padding: 35px 22px;
+    }
+
+    .photo-frame img {
+        height: 320px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .gallery-photo img {
+        height: 300px;
+    }
+
+    .paper h2,
+    .things-card h2 {
+        font-size: 42px;
+    }
+
+    .thing p {
+        font-size: 18px;
+    }
+
+}

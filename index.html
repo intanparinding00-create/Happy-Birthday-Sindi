@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MUSIK -->
+    <audio id="music" loop>
+        <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav" type="audio/wav">
+    </audio>
+
+    <!-- PEMBUKA -->
+    <section class="opening" id="opening">
+
+        <div class="checker"></div>
+
+        <div class="opening-content">
+
+            <div class="snoopy">💖</div>
+
+            <p class="small-title">A LITTLE SURPRISE FOR YOU</p>
+
+            <h1>
+                Selamat<br>
+                Ulang Tahun! 
+            </h1>
+
+            <p class="opening-text">
+                Ada sesuatu yang spesial<br>
+                menunggumu di dalam...
+            </p>
+
+            <button onclick="openBirthday()">
+                Buka Kejutan 💙
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ISI WEBSITE -->
+    <main id="birthday">
+
+        <!-- HERO -->
+        <section class="hero section">
+
+            <div class="hero-card">
+
+                <div class="tape"></div>
+
+                <p class="label">HAPPY BIRTHDAY!</p>
+
+                <h2>
+                    Sharvy Wahyuni Arruan <br>
+                     💙
+                </h2>
+
+                <div class="photo-frame">
+                    <img src="image/foto1.jpeg" alt="foto1">
+                </div>
+
+                <p class="caption">
+                    keberuntungan selalu menyertaimu 🍀
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- UCAPAN -->
+        <section class="letter section">
+
+            <div class="paper">
+
+                <div class="paper-decoration">♡</div>
+
+                <p class="label">UNTUKMU</p>
+
+                <h2>Happy Birthday! 💌</h2>
+
+                <p>
+                    Di Perpustakaan semesta yang ke365, kamu berhasil untuk
+                    melalui banyak badainya. Selamat ya menjadi salah satu manusia 
+                    pilihan Tuhan untuk tetap singgah di bumi
+                    sampai di usia mu sekarang.
+                </p>
+
+                <p>
+                    Semoga di bertambahnya usia ini membawa lebih
+                    banyak kebahagiaan, kesehatan, kesuksesan,
+                    dan hal-hal baik dalam hidupmu.
+                </p>
+
+                <p>
+                    Jangan pernah berhenti menjadi dirimu sendiri.
+                    Tetap tersenyum, tetap kuat, dan terus
+                    mengejar semua impianmu.
+                </p>
+
+                <p>
+                    Terima kasih sudah menjadi seseorang
+                    yang begitu berarti. Semoga semua hal
+                    baik selalu datang kepadamu. 💙
+                </p>
+
+                <div class="signature">
+                    ♡
+                </div>
+
+            </div>
+
+        </section> <!-- Perbaikan: Tag penutup /section yang sebelumnya hilang ada di sini -->
+
+
+        <!-- VIDEO LOKAL -->
+        <section class="things section">
+
+            <div class="things-card">
+
+                <p class="label">SPECIAL VIDEO</p>
+
+                <h2>A Special Video<br>For You 🎬</h2>
+
+                <div class="tiktok-container">
+                    <video width="100%" height="auto" controls style="border-radius: 12px; max-height: 580px;">
+                        <source src="image/Vidio.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutar video.
+                    </video>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORIES -->
+        <section class="memories section">
+
+            <div class="memory-card">
+
+                <p class="label">OUR MEMORIES</p>
+
+                <h2>Little Memories 📸</h2>
+
+                <p class="memory-text">
+                    Beberapa foto kecil untuk mengingat
+                    momen-momen indah.
+                </p>
+
+                <div class="gallery">
+
+                    <div class="gallery-photo rotate-left">
+                        <img src="image/foto2.jpeg" alt="Momen 2">
+                    </div>
+
+                    <div class="gallery-photo rotate-right">
+                        <img src="image/foto3.jpeg" alt="Momen 3">
+                    </div>
+
+                    <div class="gallery-photo rotate-left">
+                        <img src="image/foto4.jpeg" alt="Momen 4">
+                    </div>
+
+                    <div class="gallery-photo rotate-right">
+                        <img src="image/foto5.jpeg" alt="Momen 5">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HARAPAN -->
+        <section class="wish section">
+
+            <div class="wish-card">
+
+                <div class="cake">( ˘ ³˘)🎂</div>
+
+                <h2>Make a Wish! ✨</h2>
+
+                <p>
+                    Semoga setiap lilin yang kamu tiup
+                    membawa satu harapan baru.
+                </p>
+
+                <p>
+                    Semoga tahun ini menjadi tahun yang
+                    paling indah untukmu.
+                </p>
+
+                <div class="hearts">
+                    ♡ ♥ ♡ ♥ ♡
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PESAN TERAKHIR -->
+        <section class="ending section">
+
+            <div class="ending-card">
+
+                <p class="label">ONE LAST THING...</p>
+
+                <h2>
+                    Sekali lagi,<br>
+                    Selamat Ulang Tahun kakak Ipar! 
+                </h2>
+
+                <p>
+                    Jangan lupa bahagia hari ini,
+                    besok, dan setiap hari.
+                </p>
+
+                <p>
+                    Jaga selalu dirimu dan tetap
+                    menjadi orang yang luar biasa.
+                </p>
+
+                <div class="final-heart">
+                    💙
+                </div>
+
+                <p class="from">
+                    
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOMBOL MUSIK -->
+    <button class="music-button" onclick="toggleMusic()" id="musicButton">
+        🎵
+    </button>
+
+
+    <!-- KONFETI -->
+    <div id="confetti"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
